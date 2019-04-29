@@ -9,7 +9,6 @@ app.set('port', process.env.PORT || 3000)
  * 2、路由和中间件的添加顺序至关重要。如果我们把404 
  *    处理器放在所有路由上面，那首页和关于页面就不能用了，
  *    访问这些URL 得到的都是404
- * 
  */
 app.get('/', (req, res) => {
   res.type('text/plain')
